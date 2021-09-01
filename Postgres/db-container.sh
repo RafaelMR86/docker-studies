@@ -1,7 +1,7 @@
-#Criar e executar um container para o banco de dados PostgreSQL
+#Criar e executar um container para o banco de dados PostgreSQL!
 docker run -d -p 5432:5432 -e POSTGRES_USER=<nome_user> -e POSTGRES_PASSWORD=<senha> -e POSTGRES_DB=<nome_db> --name pg-container postgres
 
-#Descubro o ID do container
+#Descubro o ID do container trabalhado
 docker ps -a
 
 #executando o container na área de script
