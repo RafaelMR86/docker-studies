@@ -1,0 +1,7 @@
+###Imagem base
+FROM postgres:latest
+
+###Alterações dessa imagem base
+
+#Adiciona o script de config do bando de dados
+COPY initi.sql /docker-entrypoint-initdb.d/
